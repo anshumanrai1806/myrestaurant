@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A restaurant page</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Restaurant</h2>
+        <div class="toggle"></div>
+      </header>
+    <video src="restaurant.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+      <div class="text">
+        <h3>Never Stop</h3>
+        <h4>Eating the food you love</h4>
+        <p>We're all so busy we don't make time to enjoy our lives, good company and good food.</p>
+        <a href="#">What we serve!</a>
+      </div>
+      <ul class="social">
+        <li><a href="#"><img width="30" height="30" src="facebook.png"></a></li>
+        <li><a href="#"><img width="30" height="30" src="instagram.png" ></a></li>
+        <li><a href="#"><img width="30" height="30" src="twitter.png" ></a></li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.toggle')
+      const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+    </script>
+  </body>
+</html>
